@@ -7,11 +7,16 @@
     <title>Game</title>
     <link rel="stylesheet" href="../styles/css/game.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js" type="text/javascript"></script>
+   
     <script src="../scripts/game.js" defer></script>
 </head>
 <body>
-    <a class="logo" href="../index.html">LOGO</a>
+    <div class="head-container">
+    <a class="logo logo__logo" href="../index.html">MOVIE TRIVIA</a>
+    <div class="timer">0</div>
+     </div>
     <div class="section-container">
+    <div class="overlay"><span class="overlay__loader"></span></div>
     <div class="game">
         <h1 class="game__question">Question</h1>
         <ul class="game__answers-list">
@@ -23,7 +28,6 @@
 
         <a class="game__finish" href="./results.html">get results</a>
         <div class="game__count">1/5</div>
-        <div class="timer"></div>
     </div>
     </div>
 </body>

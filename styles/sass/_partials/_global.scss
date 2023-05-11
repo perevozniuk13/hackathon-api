@@ -2,17 +2,16 @@
 
 .logo {
     text-decoration: none;
-    background-color: $primary-background;
-    border: 2px solid $border-color;
+    background-color: #b030b0;
     padding: 3rem 6rem;
     border-radius: 50%;
-    color: $primary-color;
+    color: rgb(247, 245, 245);
     font-size: $font-title;
+    text-shadow: 2px;
 }
 
 .section-container {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100%;
 }
