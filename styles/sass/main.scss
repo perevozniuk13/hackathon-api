@@ -1,0 +1,59 @@
+@use "./_partials/resets";
+@use "./_partials/global";
+@use "./_partials/mixins" as *;
+@use "./_partials/variables" as *;
+
+
+
+.start-info {
+    @include innerContainerStyle;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &__title {
+        color: $primary-color;
+        font-size: $font-title;
+    }
+
+}
+
+.form {
+    &__container {
+        width: 80%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    &__label {
+        color: $secondary-color;
+        font-size: $font-subtitle;
+        display: inline-block;
+        margin: 2rem;
+    }
+
+    &__input {
+        width: 10rem;
+        padding: 2rem;
+        font-family: Titan;
+        font-size: $font-subtitle;
+        color: $primary-color;
+
+        &--longer {
+            width: 35%;
+        }
+    }
+
+    &__button {
+        background-color: $button-background;
+        border: 2px solid $border-color;
+        border-radius: 5px;
+        padding: 1rem 4rem;
+        text-transform: uppercase;
+        font-size: $font-button;
+        color: $button-color;
+        margin-top: 2rem;
+    }
+
+}

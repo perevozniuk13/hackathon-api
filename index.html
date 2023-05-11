@@ -6,23 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Trivia</title>
     <link rel="stylesheet" href="./styles/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js" type="text/javascript"></script>
     <script src="./scripts/main.js" defer></script>
 </head>
 <body>
-    <a href="./index.html">LOGO</a>
+    <a class="logo" href="./index.html">LOGO</a>
+    <div class="section-container">
     <div class="start-info">
-        <h1>Let's start the trivia</h1>
+        <h1 class="start-info__title">Let's start the trivia</h1>
         <form class="form" action="./pages/game.html">
-            <label for="questionsNumber">Type number of questions:</label>
-            <input class="questions-number" type="text" name="questionsNumber" id="">
-        <label for="chooseDifficulty">Choose level type</label>
-        <select name="chooseDifficulty">
+            <div class="form__container">
+            <label class="form__label" for="questionsNumber">Choose number of questions:</label>
+            <input class="form__input questions-number" type="text" name="questionsNumber" id="">
+            </div>
+            <div class="form__container">
+        <label class="form__label" for="chooseDifficulty">Choose level:</label>
+        <select class="form__input form__input--longer" name="chooseDifficulty">
         <option value="easy">Easy</option>
         <option value="medium">Medium</option>
         <option value="hard">Hard</option>
       </select>
-        <button class="start-button" type="submit">Start</button>
+    </div>
+        <button class="form__button start-button" type="submit">Play</button>
         </form>
+    </div>
     </div>
 </body>
 </html>

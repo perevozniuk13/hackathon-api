@@ -1,17 +1,20 @@
-const API_BASE_URL = "https://opentdb.com/api.php?";
-
-
 // get html form element
+
 const formEl = document.querySelector(".form");
+console.log(formEl);
+
+let typedNumberOfQuestions;
+let selectedDifficulty;
 
 // when user clicks start - get the data and redirect to game page
 formEl.addEventListener("submit", (event) => {
-    // event.preventDefault();
-    const typedNumberOfQuestions =  event.target.questionsNumber.value;
-    const selectedDifficulty = event.target.chooseDifficulty.value;
+  //   event.preventDefault();
+  typedNumberOfQuestions = event.target.questionsNumber.value;
+  selectedDifficulty = event.target.chooseDifficulty.value;
+  localStorage.setItem("questions", typedNumberOfQuestions);
+  localStorage.setItem("level", selectedDifficulty);
+
+  if (location.pathname === "/pages/game.html") {
+    removeEventListener();
+  }
 });
-
-
-
-
-

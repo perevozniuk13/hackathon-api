@@ -1,0 +1,23 @@
+@use "./_partials/resets";
+@use "./_partials/global";
+@use "./_partials/mixins" as *;
+@use "./_partials/variables" as *;
+
+.results {
+    @include innerContainerStyle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+        color: $primary-color;
+        font-size: $font-title;
+        margin: 2rem;
+    }
+
+    &__text {
+        color: $secondary-color;
+        font-size: $font-subtitle;
+    }
+}
+

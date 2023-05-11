@@ -10,19 +10,21 @@
     <script src="../scripts/game.js" defer></script>
 </head>
 <body>
-    <a href="../index.html">LOGO</a>
+    <a class="logo" href="../index.html">LOGO</a>
+    <div class="section-container">
     <div class="game">
         <h1 class="game__question">Question</h1>
-        <div class="answers-container">
-        <p class="game__answer game__answer--1">1</p>
-        <p class="game__answer game__answer--2">2</p>
-        <p class="game__answer game__answer--3">3</p>
-        <p class="game__answer game__answer--4">4</p>
-        </div>
-        <div class="count-next-container">
-            <p class="count-next-container__count">1/5</p>
-            <button class="count-next-container__next">next</button>
-        </div>
+        <ul class="game__answers-list">
+        <li class="game__answer game__answer--1">1</li>
+        <li class="game__answer game__answer--2">2</li>
+        <li class="game__answer game__answer--3">3</li>
+        <li class="game__answer game__answer--4">4</li>
+        </ul>
+
+        <a class="game__finish" href="./results.html">get results</a>
+        <div class="game__count">1/5</div>
+        <div class="timer"></div>
+    </div>
     </div>
 </body>
 </html>
